@@ -1,11 +1,11 @@
-let getLength = function (string, maxLength) {
-  if (string.length <= maxlength) {
+function getLength(string, maxLength) {
+  if (string.length <= maxLength) {
     return true;
   }
   return false;
 }
-
-let isPalindrome = function (string) {
+getLength('Длина строки', 10);
+function isPalindrome(string) {
   const newString = (string.replaceAll(' ', '')).toLowerCase();
   let emptyString = '';
   for (let i = newString.length - 1; i >= 0; i--) {
@@ -13,3 +13,4 @@ let isPalindrome = function (string) {
   }
   return emptyString === newString;
 }
+isPalindrome('топот');
